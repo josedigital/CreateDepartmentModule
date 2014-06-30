@@ -55,7 +55,7 @@ class CreateDepartment extends WireData implements Module {
 			if(!$page->numChildren) {
 
 				// sanitize and make names appropriate for fields
-				$name = wire('sanitizer')->pageName($page->name . ' Blog');
+				$name = wire('sanitizer')->pageName('blog');
 				$title = wire('sanitizer')->text($page->title . ' Blog');
 
 				// create 'blog' subpage
@@ -71,7 +71,7 @@ class CreateDepartment extends WireData implements Module {
 
 
 				// sanitize and make names appropriate for fields
-				$name = wire('sanitizer')->pageName($page->name . ' Articles');
+				$name = wire('sanitizer')->pageName('articles');
 				$title = wire('sanitizer')->text($page->title . ' Articles');
 
 				// create 'articles' page
